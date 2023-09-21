@@ -7,4 +7,4 @@ summary: "Critical design approaches for Digital Humanities work, by Jeremy Bogg
 collections:
   lessons:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:title
