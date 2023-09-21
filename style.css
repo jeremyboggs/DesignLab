@@ -1,0 +1,224 @@
+/*
+Hello fellow designer! Here is a modest list of some things that
+might help explain some particular choices in this CSS file.
+
+- Import Web Fonts: https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts
+- Custom Properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+- HSL Color Values: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl
+- Prefers Reduced Motion: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- Flexbox Layout: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+- Viewport Concepts: https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts
+*/
+
+/*
+Import Web font kit from https://fonts.adobe.com account.
+*/
+@import url("https://use.typekit.net/jmh0xfc.css");
+
+/*
+Custom Properties: Variables with set values that can help us later.
+*/
+:root {
+    --defaultFontFamily: "calluna", Georgia, sans-serif;
+    --defaultColor: #404040;
+    --headingFontFamily: "calluna-sans", "Helvetica Neue", Helvetica, sans-serif;
+    --defaultFontSize: 18px;
+    --scaler: 50vw;
+    --highlightColor: hsl(45, 80%, 50%);
+    --backgroundColor:hsl(50, 25%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin:0;
+    padding:0;
+}
+
+html {
+    font-family: var(--defaultFontFamily);
+    font-size: var(--defaultFontSize);
+    background: hsl(50, 25%, 95%);
+}
+
+body {
+    color: var(--defaultColor);
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--headingFontFamily);
+    font-weight:200;
+}
+
+h1 {
+    font-weight:900;
+    font-size: 4rem;
+}
+
+#banner h1,
+section h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    color:var(--highlightColor);
+}
+
+
+
+/*
+Reduced Motion
+*/
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*
+Banner Header
+*/
+
+#banner {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    padding:1rem 0;
+    background: white;
+}
+
+#banner p,
+#banner h1 {
+    margin:0;
+    padding:0;
+    line-height: 1;
+    color: rgba(0,0,0,0.875);
+}
+
+#banner p {
+    font-size: 0.75rem;
+}
+
+#banner a {
+    text-decoration:none;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.home #banner h1 {
+    margin-right:1rem;
+    padding-right: 1rem;
+    border-right: 1px solid var(--highlightColor);
+
+}
+
+#banner h1 em {
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: -2px;
+}
+
+/* Homepage banner, using class selector for <body> element. */
+.home #banner {
+    height: 100vh;
+    min-height: 400px;
+    border-top: 2rem solid white;
+    background: var(--backgroundColor);
+    padding:0;
+}
+
+.home #banner h1 {
+    display:block;
+    font-size: 4rem;
+}
+
+.home #banner a {
+    justify-content:center;
+    max-width:none;
+}
+
+/*
+Main Content
+*/
+#main {
+    margin: 0 auto;
+    max-width: 780px;
+}
+
+#main::after {
+    display:block;
+    content: ' ';
+    width: 5rem;
+    height: .325rem;
+    margin: 10em auto;
+    background: var(--highlightColor);
+}
+
+#main section h1 {
+    border-left: 1em solid var(--highlightColor);
+    line-height:1;
+    color: rgba(0,0,0,0.875);
+    padding-left: 0.5rem;
+    margin-left: -2rem;
+}
+
+section + section {
+    margin-top: 3rem;
+}
+
+table {
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.925rem;
+    table-layout: fixed;
+}
+
+thead th:first-of-type {
+    width: 6rem;
+}
+
+
+th,td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+thead {
+    border-bottom: 2px solid rgba(0,0,0,0.325);
+}
+
+tbody tr {
+    border-bottom: 1px dotted rgba(0,0,0,0.25);
+}
+
+td:empty {
+    background: rgba(0,0,0,0.0325);
+}

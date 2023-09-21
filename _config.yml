@@ -1,0 +1,9 @@
+title: DesignLab
+author:
+  name: Jeremy Boggs
+  email: jeremy@virginia.edu
+summary: "Critical design approaches for Digital Humanities work, by Jeremy Boggs"
+
+collections:
+  lessons:
+    output: true

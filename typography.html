@@ -1,0 +1,50 @@
+---
+layout: default
+title: Typography
+---
+
+<h1>Typography</h1>
+<h2>Headings</h2>
+{% for i in (1..6) %}
+<h{{ i }}>Heading {{ i }}</h{{ i }}>
+{% endfor %}
+
+<ul>d</ul>
+<h2>Paragraphs</h2>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit provident consectetur natus, atque odio iusto doloremque, porro, commodi voluptatem facilis ipsa cumque unde a. Quibusdam eius voluptatibus quos aperiam voluptatum.</p>
+<p>Laboriosam et magni illum aliquam, minus adipisci autem maxime, nulla commodi labore dolore! Ipsum eos obcaecati voluptas odit. Explicabo exercitationem consectetur debitis.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, suscipit nulla inventore dolor quasi laborum repudiandae! Et sunt quam earum nesciunt nobis autem neque, quos obcaecati consectetur ea? Fugiat, quidem!</p>
+
+<h2>Blockquote</h2>
+<blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus rem velit magnam nam aliquam. Officiis repellendus in aspernatur ut, harum reprehenderit et, nisi cupiditate doloremque consequuntur soluta unde cum modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nihil culpa quo quae impedit obcaecati adipisci dolor ab libero eaque! Soluta ea natus exercitationem molestiae distinctio sunt consequatur iusto voluptas?</p>
+    <cite>Lorem Ipsum Dolor</cite>
+</blockquote>
+
+<h2>Lists</h2>
+<ol>
+    <li>Ducimus rem velit magnam nam aliquam.</li>
+    <li>Fugiat, quidem!
+        <ol>
+            <li>Ducimus rem velit magnam nam aliquam.</li>
+            <li>Fugiat, quidem!</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Quibusdam eius voluptatibus quos aperiam voluptatum.</li>
+        </ol>
+    </li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Quibusdam eius voluptatibus quos aperiam voluptatum.</li>
+</ol>
+<ul>
+    <li>Ducimus rem velit magnam nam aliquam.</li>
+    <li>Fugiat, quidem!</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <ul>
+            <li>Ducimus rem velit magnam nam aliquam.</li>
+            <li>Fugiat, quidem!</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Quibusdam eius voluptatibus quos aperiam voluptatum.</li>
+        </ul>
+    </li>
+    <li>Quibusdam eius voluptatibus quos aperiam voluptatum.</li>
+</ul>
