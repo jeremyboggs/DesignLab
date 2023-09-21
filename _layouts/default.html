@@ -9,7 +9,7 @@
     {% assign description = page.excerpt | default: site.summary | strip_html | normalize_whitespace | escape %}<meta name="description" content="{{ description }}">
 
     <!-- Open Graph http://ogp.me/ -->
-    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:title" content="{{ page.title | escape }}">
     <meta property="og:description" content="{{ description }}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}/">
