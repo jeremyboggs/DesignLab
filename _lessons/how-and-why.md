@@ -11,9 +11,10 @@ title: "How & Why"
 ## Reading
 - [The Shape of Design](https://shapeofdesignbook.com/) by Frank Chimero.
 
-## Questions to Consider
+## Prompts to Consider
 
-- 
+- Can you recall an instance recently, or anytime in the past, when you designed something? Even if you didn't think of yourself as designing something. How did you do it? _Why_ did you do it? What were the results after, for you and for anyone else who might have encountered your designed thing?
+- Share a particular sentence or part of Chimero's book that resonates with you. How might you return to that idea in your own work?
 
 ## Resources
 - Berry, Anne H., et. al. _The Black Experience in Design: Identity Expression & Reflection_. 2022.
