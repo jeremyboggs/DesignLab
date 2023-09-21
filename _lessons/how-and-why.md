@@ -15,6 +15,7 @@ title: "How & Why"
 
 - Can you recall an instance recently, or anytime in the past, when you designed something? Even if you didn't think of yourself as designing something. How did you do it? _Why_ did you do it? What were the results after, for you and for anyone else who might have encountered your designed thing?
 - Share a particular sentence or part of Chimero's book that resonates with you. How might you return to that idea in your own work?
+- Is there anything that Chimero does not specifically address that we should consider? Any particular topics, or perspectives that we might bring to bear when including Chimero's advice?
 
 ## Resources
 - Berry, Anne H., et. al. _The Black Experience in Design: Identity Expression & Reflection_. 2022.
